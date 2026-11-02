@@ -611,7 +611,7 @@ async def writing_stats():
 
     return Layout(
         air.Title("Writing Stats"),
-        air.Script(src="hhttps://cdn.plot.ly/plotly-4.0.0.min.js"),
+        air.Script(src="https://cdn.plot.ly/plotly-4.0.0.min.js"),
         air.Div(id="post-counts"),
         air.Children(
                 air.Script(f"Plotly.newPlot('post-counts', {data}, {layout}, {config});"),
